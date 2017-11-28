@@ -1,0 +1,9 @@
+[masters]
+kube-1
+
+[etcd:children]
+masters
+
+[nodes]
+kube-2
+kube-3

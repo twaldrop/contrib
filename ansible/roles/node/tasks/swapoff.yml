@@ -4,6 +4,8 @@
     name: swap
     fstype: swap
     state: absent
+  ignore_errors: true
 - name: Disable swap
   command: swapoff -a
   when: ansible_swaptotal_mb > 0
+  ignore_errors: true
